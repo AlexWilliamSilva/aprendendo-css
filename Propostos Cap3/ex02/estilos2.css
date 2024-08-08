@@ -1,0 +1,21 @@
+body {
+    background-color: #fefefe;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h1 {
+    color: #764e36;
+    border-bottom: 3px solid #764e36;
+    border-top: 3px solid #764e36;
+}
+
+h2 {
+    color: white;
+    background-color: #764e36;
+}
+
+img {
+    border: 3px solid #764e36;
+    padding: 10px;
+}
