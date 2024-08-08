@@ -10,7 +10,7 @@ h2 {
     font-size: 1.75em; /* 28/16=1.75 */
     background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
     color: #fff;
-    letter-spacing: .1em;
+    letter-spacing: .1em; /* espaçamento entre as letras */
     padding: 7px;
     width: 316px;
 }
@@ -143,3 +143,60 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+/* página banho e tosa - formulário */
+
+#banhoEtosa fieldset {
+    background-color: #fff;
+    border: none;
+    border-radius: 0 15px;
+    margin-bottom: 20px;
+}
+
+#banhoEtosa fieldset legend {
+    background-color: #C0262C;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    padding: 10px;
+    margin-left: -13px;
+}
+
+#banhoEtosa fieldset label {
+    display: block;
+    margin-top: 7px;
+    float: left;
+    width: 115px;
+}
+#banhoEtosa fieldset input[type="text"],
+#banhoEtosa fieldset input[type="email"] {
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #000;
+    width: 770px;
+}
+
+#banhoEtosa fieldset textarea {
+    width: 770px;
+    height: 100px;
+    font-size: 1.2em;
+    border: #000 solid 1px;
+}
+
+#banhoEtosa fieldset label.labelSimples {
+    display: inline;
+    float: none;
+}
+#banhoEtosa p {
+    text-align: left;
+}
+#banhoEtosa p:firsti-line {
+    font-size: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+#banhoEtosa main h2 {
+    background: #FE;
+}
