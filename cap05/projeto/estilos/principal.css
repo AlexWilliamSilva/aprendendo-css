@@ -1,11 +1,116 @@
+/* estrutura */
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    width: 240px;
+    float: left; /* flutua o bloco de titulo para a esquerda da pagina */
+    background-image: url(../multimidia/meu-amigo-cao-petshop-header.png); /* adiciona uma imagem que flutua para o canto superior esquerdo */
+    background-repeat: no-repeat; /* faz com que a imagem não se repita infinitamente no mesmo bloco */
+    background-position: center center; /*  */
+    height: 200px;
+    text-indent: -1000px; /* espaçamento antes do texto do paragrafo da pag index*/
+    margin-bottom: 0px;
+}
+
+header #anuncio {
+    width: 510px;
+    float: left;
+    margin: 80px auto auto;
+    padding-top: 0px;
+}
+
+header section {
+    padding-top: 70px;
+}
+
+header section a[href="boletim.html"] {
+    border: solid #C0262C thin;
+    padding: 15px;
+    border-radius: 15px;
+    color: #C0262C;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header section p {
+    color: #999999;
+    margin: 33px auto 7px;
+}
+
+header section figure {
+    width: 100%;
+    margin: 0px;
+}
+
+header section figure a {
+    padding: 25px 5px 0;
+    border: none;
+}
+
+header section figure a:first-child {
+    padding: 25px 5px 0 0;
+}
+
+header section figure a:last-child { 
+    padding: 25px 0 0 5px;
+}
+
+/* estrutura de navegação */
+nav {
+    background-color: #000;
+    overflow: auto; /*  */
+    clear: both;
+    margin-top: 10px;
+}
+
 /* textos da área principal */
 
+body { 	
+    font-family: Helvetica, Arial, sans-serif; 
+    }    
+
+main h1 {
+    color: #C0262C;
+    font-size: 1.5em; /* 40/16=2.5 */
+    border-bottom: #C0262C solid thin;
+    padding-bottom: 7px;
+}
+
+main h2 {
+    font-size: 1.75em; /* 28/16=1.75 */
+    background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
+    color: #fff;
+    letter-spacing: .1em;
+    padding: 7px;
+    width: 316px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+main h2+p:first-line {
+    font-size: 1.17em;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+main hr {
+    border-color: #C0262C;
+}
 
 h1 {
     color: #C0262C;
 	font-size: 2.5em; /* 40/16=2.5 */
-border-bottom: #C0262C solid thin;
-padding-bottom: 7px;
+    border-bottom: #C0262C solid thin;
+    padding-bottom: 7px;
 
 }
 
@@ -35,17 +140,14 @@ hr {
 border-color: #C0262C;
 }
 
-body { 	
-font-family: Helvetica, Arial, sans-serif; 
-}
-
 /* página produtos - tabela */
 
 #produtos table {
     width: 600px;
     margin: 50px auto 30px;
     text-align: center;
-    border-collapse: collapse;
+    border-collapse: collapse; /* uso de bordas compartilhas em uma tabela */
+    /* border-collapse: separate; */ /* uso de separadas */
 }
 
 #produtos th, #produtos td {
@@ -54,7 +156,8 @@ font-family: Helvetica, Arial, sans-serif;
 }
 
 table {
-    border-collapse: collapse;
+    border-collapse: collapse; /* uso de bordas compartilhas em uma tabela */
+    /*para teste */  /*border-collapse: separate;*/
 }
 tr {
     border-top: solid 3px #777;
@@ -72,10 +175,8 @@ th, td {
 }
 
 /*caption {
-    caption-side: bottom;
-    color: #fff;
-    padding: 10px 0;
-}*/
+    caption-side: bottom; <--  manda a caixa de legenda pra abaixo da tabela
+*/
 
 #produtos td[colspan] {
     font-style: italic;
@@ -159,7 +260,7 @@ input[type="submit"] {
     background-color: #C0262C;
     color: #fff;
     font-weight: bold;
-    letter-spacing: 0.5em;
+    letter-spacing: .05em;
     padding: 10px;
     margin-left: -13px;
 }
@@ -223,3 +324,4 @@ input[type="submit"] {
     border: solid #C0262C thin;
     background-color: #fff;
 }
+
