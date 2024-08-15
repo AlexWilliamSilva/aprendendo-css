@@ -70,6 +70,58 @@ nav {
     margin-top: 10px;
 }
 
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 50px;
+    line-height: 2em;
+}
+#inicial a[href="index.html"],
+#quemSomos a[href="quem-somos.html"],
+#produtos a[href="produtos.html"],
+#banhoEtosa a[href="banho-e-tosa.html"],
+#curiosidades a[href="curiosidade.html"] {
+    background-color: #c0262c;
+}
+
+/* estrutura página inicial */
+
+#inicial aside {
+    width: 230px;
+    float: left;
+    margin-top: 30px;
+}
+#inicial main {
+    width: 490px;
+    float: left;
+    margin: 30px 25px 10px;
+}
+
+/* rodapé */
+footer {
+    clear: both;
+    border-top: 7px solid #999;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0px;
+}
+
 /* textos da área principal */
 
 body { 	
@@ -87,7 +139,7 @@ main h2 {
     font-size: 1.75em; /* 28/16=1.75 */
     background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
     color: #fff;
-    letter-spacing: .1em;
+    letter-spacing: .1em; /* espaçamento entre cada uma das letras */
     padding: 7px;
     width: 316px;
 }
@@ -265,7 +317,7 @@ input[type="submit"] {
 #banhoEtosa p {
     text-align: left;
 }
-#banhoEtosa p:firsti-line {
+#banhoEtosa p:first-line {
     font-size: inherit;
     font-variant: inherit;
     font-weight: inherit;
@@ -296,3 +348,30 @@ input[type="submit"] {
     background-color: #fff;
 }
 
+/* página obrigado */
+#obrigado main p img {
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: solid #C0262C thin;
+    background-color: #fff;
+}
+
+#destaqueObrigado {
+    position: relative;
+    border: solid #C0262C 1px;
+    border-radius: 0 25px;
+    padding: 5px 25px;
+    margin: 20px 0;
+}
+
+#obrigado #lencinho {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
