@@ -1,58 +1,61 @@
 /* estrutura */
 body {
-    width: 1000px;
-    margin-left: auto;
+    width: 1000px; /* determina o quanto os elementos vão tomar de espaço em largura */
+    margin-left: auto;  /* as duas margens alinham os elementos ao meio  */
     margin-right: auto;
 }
 
 header h1 {
-    width: 240px;
+    width: 240px; /* determina a largura da imagem do cão */
     float: left; /* flutua o bloco de titulo para a esquerda da pagina */
     background-image: url(../multimidia/meu-amigo-cao-petshop-header.png); /* adiciona uma imagem que flutua para o canto superior esquerdo */
     background-repeat: no-repeat; /* faz com que a imagem não se repita infinitamente no mesmo bloco */
-    background-position: center center; /*  */
-    height: 200px;
+    background-position: center center; /* altera a posição do blocoda imagem para centralizar ela no canto superior esquerdo */
+    height: 200px; /* altera a localização em altura da imagem na tela */
     text-indent: -1000px; /* espaçamento antes do texto do paragrafo da pag index*/
-    margin-bottom: 0px;
+    margin-bottom: 0px; /* retira o espaçamento em branco da margem em baixo da imagem */
 }
 
 header #anuncio {
-    width: 510px;
-    float: left;
-    margin: 80px auto auto;
-    padding-top: 0px;
+    width: 510px; /* determina a largura da imagem de anuncio */
+    float: left; /* flutua o bloco de anuncio para a esquerda logo ao lado da imagem presente no header h1 */
+    margin: 80px auto auto; /* 3 valores especificados no qual a primeira é para o topo, a segunda se ajusta conforme o navegador achar 
+    mais adequado para a centralização do lado esquerdo e direito, e o terceiro valor é para o lado inferior */
+    padding-top: 0px; /* determina o espaçamento da imagem do anuncio do topo da pagina */
 }
 
 header section {
-    padding-top: 70px;
+    padding-top: 70px; /* deteremina o espaçamento do bloco da seção para o topo da pagina */
 }
 
 header section a[href="boletim.html"] {
-    border: solid #C0262C thin;
-    padding: 15px;
-    border-radius: 15px;
-    color: #C0262C;
-    text-decoration: none;
-    font-size: 1.1em;
+    border: solid #C0262C thin; /* acrescenta uma borda solida e fina com a cor vermelha em volta do link para a pagina do boletim.html */
+    padding: 15px; /* espaçamento entre a borda e o link */
+    border-radius: 15px; /* determina a curva para ambas as pontas da borda */
+    color: #C0262C; /* determina a cor do link para vermelho */
+    text-decoration: none; /* retira o sublinhado do link */
+    font-size: 1.1em; /* altera o tamanho da fonte do link */
 }
 
 header section p {
-    color: #999999;
-    margin: 33px auto 7px;
+    color: #999999; /* altera a cor do paragrafo acima dos icones dos apps */
+    margin: 33px auto 7px; /* 3 valores especificados no qual a primeira é para o topo, a segunda se ajusta conforme o navegador achar 
+    mais adequado para a centralização do lado esquerdo e direito, e o terceiro valor é para o lado inferior */
 }
 
 header section figure {
-    width: 100%;
-    margin: 0px;
+    width: 100%; /* determina que a figura não vá ultrapassar os limites da largura em porcentagem */
+    margin: 0px; /* margem aplicada para todos os quatro lados não interferir na localização dos icones */
 }
 
 header section figure a {
-    padding: 25px 5px 0;
-    border: none;
+    padding: 25px 5px 0; /* teoricamente: 3 valores especificados no qual a primeira é para o topo, a segunda se ajusta conforme o 
+    navegador achar mais adequado para a centralização do lado esquerdo e direito, e o terceiro valor é para o lado inferior */
+    border: none; /* retira a possibilidade de borda ao redor dos links */
 }
 
 header section figure a:first-child {
-    padding: 25px 5px 0 0;
+    padding: 25px 5px 0 0; /*  */
 }
 
 header section figure a:last-child { 
@@ -104,40 +107,6 @@ main h2+p:first-line {
 
 main hr {
     border-color: #C0262C;
-}
-
-h1 {
-    color: #C0262C;
-	font-size: 2.5em; /* 40/16=2.5 */
-    border-bottom: #C0262C solid thin;
-    padding-bottom: 7px;
-
-}
-
-h2 {
-    font-size: 1.75em; /* 28/16=1.75 */
-    background: #C0262C url(../multimidia/back-bolinha.gif) repeat top center;
-    color: #fff;
-    letter-spacing: .1em; /* espaçamento entre as letras */
-    padding: 7px;
-    width: 316px;
-}
-
-p { 	
-font-size: 1.1em; 	
-line-height: 1.3em; 	
-text-align: justify; 
-}
-
-p:first-line {
-font-size: 1.17em;
-font-variant: small-caps;
-font-weight: bolder;
-font-style: italic;
-}
-
-hr {
-border-color: #C0262C;
 }
 
 /* página produtos - tabela */
@@ -213,21 +182,22 @@ input#nome, input#email {
     width: 800px;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder { /* garante que os estilos e cores sejam aplicados em navegadores que utilizam o WebKit, como
+    Chrome e o Safari */
     /* Chrome/Safari/Opera */
     color: #ddd;
     font-style: italic;
     font-size: .8em;
 }
 
-::-moz-placeholder {
+::-moz-placeholder { /* garante que os estilos e cores sejam aplicados no navegador do Firefox ou anteriormente chamado mozilla */
     /* Firefox */
     color: #ddd;
     font-style: italic;
     font-size: .8em;
 }
 
-:-ms-input-placeholder {
+:-ms-input-placeholder { /* garante que os estilos e cores sejam aplicados no navegador do internet explorer e em antigas versóes do Edge*/
     /* IE */
     color: #ddd;
     font-style: italic;
@@ -236,15 +206,16 @@ input#nome, input#email {
 
 input[type="submit"] {
     background-color: #C0262C;
-    background: linear-gradient(to bottom, #6b1516 0%, #C0262C 30%, #C0262C 70%, #6b1516 100%);
+    background: linear-gradient(to bottom, #6b1516 0%, #C0262C 30%, #C0262C 70%, #6b1516 100%); /* permite a progressão
+     de uma cor para outra, neste caso somente para a parte de baixo do botão enviar da pagina boletim.html*/
     border: none;
     border-radius: 30px;
     font-size: 1.2em;
     color: #fff;
     padding: 10px 30px;
     margin: 20px 0;
-    text-shadow: 2px 2px 5px #000;
-    cursor: pointer;
+    text-shadow: 2px 2px 5px #000; /* acrescenta uma sombra pequena ao texto da palavra enviar na pagina do boletim.html */
+    cursor: pointer; /* faz com que toda vez que o ponteiro do mouse passar por cima do botão enviar, mude para o estagio de apontamento */
 }
 
 /* página banho e tosa - formulário */
