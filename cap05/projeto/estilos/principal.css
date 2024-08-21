@@ -65,8 +65,8 @@ header section figure a:last-child {
 /* estrutura de navegação */
 nav {
     background-color: #000;
-    overflow: auto; /*  */
-    clear: both;
+    overflow: auto; /* barra de rolagem no canto esquerdo */
+    clear: both; /* empurra o nav para baixo dos elementos que estão na direita e na esquerda*/
     margin-top: 10px;
 }
 
@@ -90,14 +90,14 @@ nav ul a {
 #inicial a[href="index.html"],
 #quemSomos a[href="quem-somos.html"],
 #produtos a[href="produtos.html"],
-#banhoEtosa a[href="banho-e-tosa.html"],
+#banhoEtosa a[href="banho-e-tosa.html"], /*acada link visitado ele mostra um quadrado em vermelhor, mostrando que voce esta na quela pagina*/
 #curiosidades a[href="curiosidade.html"] {
     background-color: #c0262c;
 }
 
 /* estrutura página inicial */
 
-#inicial aside {
+#inicial aside {  /*alinha todos os elementos no centro*/
     width: 230px;
     float: left;
     margin-top: 30px;
@@ -110,7 +110,7 @@ nav ul a {
 
 /* rodapé */
 footer {
-    clear: both;
+    clear: both; /* empurra o nav para baixo dos elementos que estão na direita e na esquerda*/
     border-top: 7px solid #999;
     background-color: #000;
     color: #fff;
@@ -150,7 +150,7 @@ main p {
     text-align: justify;
 }
 
-main h2+p:first-line {
+main h2+p:first-line { 
     font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
@@ -358,20 +358,63 @@ input[type="submit"] {
 }
 
 #destaqueObrigado {
-    position: relative;
+    position: relative; /*  */
     border: solid #C0262C 1px;
     border-radius: 0 25px;
     padding: 5px 25px;
     margin: 20px 0;
 }
 
-#obrigado #lencinho {
-    position: absolute;
-    top: -20px;
+#obrigado #lacinho { /*posicionamento da figura lacinho */
+    position: absolute; 
+    top: -20px; 
     right: -20px;
-    -webkit-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg); 
     -moz-transform: rotate(30deg);
     -ms-transform: rotate(30deg);
     -o-transform: rotate(30deg);
     transform: rotate(30deg);
 }
+
+/*transicao em caixa - 3caixa de 163X230*/
+
+.anuncioAnime {
+    margin: 0 0 10px; padding: 0;
+    overflow: auto;
+}
+.anuncioAnime .boxAnuncio {
+    width: 163px; height: 230px;
+    border-bottom: solid thin #C0262C;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.anuncioAnime .boxAnuncio p {
+    text-align: center;
+    font-size: .95em;
+    line-height: 1.3em;
+    background-color: rgba(255, 255, 255, 1);
+    border-left: solid thin #c0262c;
+    border-right: solid thin #C0262C;
+    margin: 0;
+    padding: 7px 15px;
+    position: absolute;
+    bottom: -80px; left: 0;
+    transition: 1s linear 0.1s; /* transição do bloco após passar por cima do paragrafo */
+    cursor: default;
+}
+.anuncioAnime .boxAnuncio p:first-line {
+    font-size: 1.1em;
+    font-variant: inherit;
+    font-style: normal;
+    font-weight: bolder;
+    color: #c0262c;
+    padding: 0;
+}
+.anuncioAnime .boxAnuncio p:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+    bottom: 0;
+}
+
+/* controle de áudio */
+aside audio {width: 230px;} /*  */
