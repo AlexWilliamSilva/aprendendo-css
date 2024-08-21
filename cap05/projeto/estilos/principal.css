@@ -85,7 +85,7 @@ nav ul a {
     text-decoration: none;
     font-size: 1.2em;
     padding: 8px 50px;
-    line-height: 2em;
+    line-height: 2em; /* altura do bloco da linha */
 }
 #inicial a[href="index.html"],
 #quemSomos a[href="quem-somos.html"],
@@ -358,7 +358,7 @@ input[type="submit"] {
 }
 
 #destaqueObrigado {
-    position: relative; /*  */
+    position: relative; /* mudamos a posição de um elemento com base na posição inicial dele */
     border: solid #C0262C 1px;
     border-radius: 0 25px;
     padding: 5px 25px;
@@ -366,7 +366,7 @@ input[type="submit"] {
 }
 
 #obrigado #lacinho { /*posicionamento da figura lacinho */
-    position: absolute; 
+    position: absolute; /*  */
     top: -20px; 
     right: -20px;
     -webkit-transform: rotate(30deg); 
