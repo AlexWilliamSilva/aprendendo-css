@@ -1,0 +1,33 @@
+* {
+    font-family: sans-serif; /* font family aplicado para toda letra presente na no arquivo index.html */
+}
+
+h3{
+    color: #1a6868; /* cor ciano aplicado para todos os h3 */
+}
+
+li::marker{ /* estiliza os marcadores do li */
+    color: #1a6868; /* cor ciano aplicado para todos os li */
+    font-weight: bold; /* peso da fonte aplicada a todos os li */
+    font-style: italic; /* estilo das fontes dos li */
+}
+
+li{
+    line-height: 30px; /* altura da linha para todos os li */
+}
+
+input[type="checkbox"]:checked + p{ 
+    text-decoration: line-through; /* quando o input de chackbox for selecionado todo o paragrafo deste checkbox serabriscado com uma linha */
+}
+
+li > input[type="checkbox"], li > p{
+    display: inline; /* dsiplay acrescentado no input checkbox presente dentro do li, assim para todos os p dentro do li */
+}
+
+li > p{
+    color: black !important; /* cor preta aplicada a todos os paragrafos presentes dentro do li, priorizando ele ao máximo com o código !important */
+}
+
+h1 {
+    color: #12787c; /* para todos os h1 aplicar a cor ciano */
+}
