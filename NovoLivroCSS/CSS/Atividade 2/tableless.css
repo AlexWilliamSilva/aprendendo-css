@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, Helvetica, sans-serif; /* um conjunto de fontes aplicados em todas as letras, sendo executadas em sequencia funcional, caso  */
+    font-family: Arial, Helvetica, sans-serif; /* um conjunto de fontes aplicados em todas as letras, sendo executadas em sequencia */
 }
 
 #topo > .capa{ /* modifica a posição em largura do elemento presente na classe capa dentro do id topo */
@@ -11,30 +11,30 @@
     display: inline-block;
 }
 
-#lista > ol > li{ /* modifica o tamanho em altura da linha  */
-    line-height: 2rem;
+#lista > ol > li{ 
+    line-height: 2rem; /* modifica o tamanho em altura da linha  */
 }
 
 #lista > ol > li > *{
-    box-sizing: content-box;
+    box-sizing: content-box; /* tamanho em largura do bloco que aparecera na tel, de forma que não ultrapasse e quebre o texto */
     display: inline-block;
 }
 #lista > ol > li .artista{
-    width: 40%;
+    width: 40%; /* bloco do texto dois artistas em largura */
 }
 #lista > ol > li .musica{
-    width: 40%;
+    width: 40%; /* bloco das musicas em largura */
 }
 #lista > ol > li .duracao{
-    width: 15%;
-    text-align: right;
+    width: 15%; /* bloco do tempo das musicas em largura */
+    text-align: right; /* alinhamento dos textos a direita */
 }
 
 #lista > ol > li:hover {
-    background-color: #d4c6ed;
+    background-color: #d4c6ed; /* cor de fun */
 }
 
 #lista > ol {
-    list-style-position: inside;
-    padding-left: 0px;
+    list-style-position: inside; /* posição da lista ordenada para o lado esquerdo, "adentrando" um pouco mais na tela */
+    padding-left: 0px; /* espaçamento para a esquerda da lista ordenada */
 }
